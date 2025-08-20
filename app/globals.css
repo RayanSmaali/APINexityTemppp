@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h3 {
+  text-align: center;
+  color: #333;
+}
+
+.CommentInput {
+  width: 100%;
+  max-width: 400px; 
+  padding: 10px; 
+  font-size: 16px;
+  border: 2px solid #ccc; 
+  border-radius: 5px; 
+  background-color: #f8f9fa; 
+  outline: none; 
+  transition: border-color 0.3s, box-shadow 0.3s;
+  
+}
+
+
+.CommentInput:focus {
+  border-color: #097efc; 
+  box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2); 
+}
+
+.CommentInput::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+
+button {
+  background-color: #007bff; 
+  color: white; 
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px; 
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #218838; 
+  transform: scale(1.05); 
+}
+
+button:active {
+  background-color: #1e7e34; 
+  transform: scale(0.98); 
+}
+
+
+.filters{
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.filters button {
+  display: block;
+  margin: 20px auto;
+  margin-top: 20px;
+  size: 100px;
+  width: 100px;
+}
+
+.filters input {
+  margin-right: 4px;
+  margin-left: 5px;
+}
+
+
+
+
+
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.ticket {
+  background: #fff;
+  border-left: 5px solid #007bff;
+  padding: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+}
+
+.ticket:nth-child(even) {
+  border-left-color: #28a745;
+}
+
+.ticket input{
+  width: 400;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.ticket button{
+  display: block;
+  margin: 10px auto;
+}
+
+.value {
+  margin-bottom: 10px;
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 16px;
+  color: #333;
+}
+
+.ticket span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.ticket strong{
+  color: #007bff;
+}
+
+.ticket label {
+  font-size: 18px;
+  color: #333;  
+  margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {  /* Styles pour écrans inférieurs à 768px */
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .ticket {
+    padding: 10px;
+    border-left-width: 4px;
+    font-size: 14px;
+  }
+
+  .ticket label {
+    font-size: 14px;
+  }
+
+  .ticket input {
+    width: 90%;
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .ticket button {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .filters {
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .filters button {
+    width: 100%;
+  }
+}
