@@ -14,7 +14,8 @@ export async function PUT(req: Request, context: { params: Promise<{ rfc_number:
 
         const requestBody = {
             "end_action": {
-                "description": `${comment}`,
+                "description": "Closed by Stem API",
+                "comment": `${comment}`,
                 "doneby_name": "API, Stem"
             }
         };

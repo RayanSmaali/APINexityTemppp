@@ -188,7 +188,7 @@ const Card = ({ allTickets, allComments }) => {
                         <input className="CommentInput" id={`commentInput${index}`}  type="text" placeholder="Commentaire de résolution"></input>
                         
                         <button onClick={(e) => SendConfirmation(e, ticket.RFC_NUMBER,(document.getElementById(`commentInput${index}`) as HTMLInputElement).value)}>
-                            clôturer le ticket
+                            Finaliser la tâche
                         </button>
 
 
