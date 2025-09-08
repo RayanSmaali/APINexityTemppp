@@ -25,6 +25,7 @@ export async function PUT(req: Request, context: { params: Promise<{ rfc_number:
             method: "PUT",
             headers: {
                 "Authorization": `Bearer ${token}`,
+                "Content-Type": "application/json"
             },
             body: JSON.stringify(requestBody)
         });
